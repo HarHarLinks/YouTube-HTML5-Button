@@ -1,0 +1,29 @@
+{
+   "content_scripts": [ {
+      "all_frames": true,
+      "js": [ "contentscript.js" ],
+      "matches": [ "https://www.youtube.com/watch*" ],
+      "run_at": "document_start"
+   } ],
+   "description": "Disables YouTube™ HTML5 Player by button press",
+   "icons": {
+      "128": "icon128.png",
+      "16": "icon16.png",
+      "32": "icon32.png",
+      "48": "icon48.png"
+   },
+   "permissions": [
+      "activeTab"
+   ],
+   "background": {
+      "scripts": ["background.js"],
+      "persistent": false
+   },
+   "manifest_version": 2,
+   "name": "Disable YouTube™ HTML5 Player by button",
+   "version": "1.0",
+   "browser_action": {
+    "default_icon": "icon16.png",
+    "default_title": "Disable YouTube HTML5 Player"
+   }
+}
