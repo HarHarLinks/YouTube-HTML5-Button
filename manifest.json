@@ -1,4 +1,12 @@
 {
+   "background": {
+      "persistent": false,
+      "scripts": [ "background.js" ]
+   },
+   "browser_action": {
+      "default_icon": "5_16.png",
+      "default_title": "Disable YouTube HTML5 Player"
+   },
    "content_scripts": [ {
       "all_frames": true,
       "js": [ "contentscript.js" ],
@@ -12,18 +20,9 @@
       "32": "icon32.png",
       "48": "icon48.png"
    },
-   "permissions": [
-      "activeTab"
-   ],
-   "background": {
-      "scripts": ["background.js"],
-      "persistent": false
-   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnm7HV/Obi2/M6NLNfoj1/B5fijfFjCxX6R7Ce6Fi4lo0GF6Xz74wHjHjBPoNEb323MY+iVh73GOR0GjMmAw0R2iezIWeUscFrarFRD+IedC6B0vgnXJ2FGXOg4Xblzrh7yvzWVzeDYhyWKySG+0HCynqo4rs+XnVjjr6yz0d5v7uSRwr+8lSVxZODA1EXmFqbN/4B3gcz2TZ+eTWwXIo/0XUnnQsEloql4fr0tenYkXFeO4UbzCSElf4c8CKq+g2oZV6bKW/KvAKOECchmokm1LqODBMCGyXGtmC1TnQ6ssNTtntyAteEETVcOUO5ufI6N147faNyo0ePO/9WhCmWwIDAQAB",
    "manifest_version": 2,
    "name": "Disable YouTube™ HTML5 Player by button",
-   "version": "1.0",
-   "browser_action": {
-    "default_icon": "icon16.png",
-    "default_title": "Disable YouTube HTML5 Player"
-   }
+   "permissions": [ "activeTab" ],
+   "version": "1.0"
 }
