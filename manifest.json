@@ -24,5 +24,5 @@
    "manifest_version": 2,
    "name": "Disable YouTube™ HTML5 Player by button",
    "permissions": [ "activeTab" ],
-   "version": "1.0"
+   "version": "1.1"
 }
